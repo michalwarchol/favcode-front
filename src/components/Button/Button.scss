@@ -1,0 +1,36 @@
+@import "src/theme.scss";
+
+.button {
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.fill {
+  background-color: $blue;
+  border: 2px solid $blue;
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: darken($color: $blue, $amount: 5);
+    transition: background-color 0.1s ease-in-out;
+    &:active {
+      background-color: lighten($color: $blue, $amount: 5);
+    }
+  }
+}
+
+.outline {
+  border: 2px solid $blue;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: $blue;
+  &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      transition: background-color 0.1s ease-in-out;
+  
+      &:active {
+        background-color: lighten($color: rgba(0, 0, 0, 0.2), $amount: 5);
+      }
+    }
+}
