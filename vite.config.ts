@@ -4,4 +4,11 @@ import react from '@vitejs/plugin-react'; // eslint-disable-line import/no-extra
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "src/theme.scss";',
+      },
+    },
+  },
 });
