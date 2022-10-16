@@ -1,0 +1,10 @@
+@import 'src/theme.scss';
+
+.textInput {
+  background-color: white;
+  color: $textDark;
+  outline: 0;
+  border: 1px solid $secondaryBackground;
+  padding: 6px;
+  border-radius: 4px;
+}
