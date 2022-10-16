@@ -1,14 +1,14 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react'; // eslint-disable-line import/no-extraneous-dependencies
 
-import Button from './TextInput.view';
+import TextInput from './TextInput.view';
 
 export default {
   title: 'components/TextInput',
-  component: Button,
+  component: TextInput,
   argTypes: {},
-} as ComponentMeta<typeof Button>;
+} as ComponentMeta<typeof TextInput>;
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template: ComponentStory<typeof TextInput> = (args) => <TextInput {...args} />;
 
 export const Default = Template.bind({});
