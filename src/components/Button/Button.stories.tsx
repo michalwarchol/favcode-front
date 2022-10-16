@@ -1,6 +1,5 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react'; // eslint-disable-line import/no-extraneous-dependencies
-import '../../index.scss';
 
 import Button from './Button.view';
 
